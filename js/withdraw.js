@@ -19,4 +19,5 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
     const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
     setTextElementValueById("balance-total", newBalanceTotal);
   }else{alert("You have not enough")}
+  saveDataInStorage("withdraw", newWithdrawTotal )
 });
